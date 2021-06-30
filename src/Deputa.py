@@ -1,7 +1,11 @@
 #!/usr/bin/env python
-""" API da Câmara dos Deputados
-    Source: https://dadosabertos.camara.leg.br/"""
-
+""" Deputa: auxilia o acesso a API da câmara dos deputados
+    * o método get_all_deputy para acessar a lista de todos os deputados
+    * o método get_deputy para acessar apenas um deputado, 
+        tendo que informar parâmetro que permita localiza-lo na base de dados e 
+        outro contendo a coluna que deseja ou todas.
+    Source of API: https://dadosabertos.camara.leg.br/
+"""
 import logging
 import json
 import requests
